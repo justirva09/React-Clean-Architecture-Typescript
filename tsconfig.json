@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["src/presentations/pages/*"],
+      "@components/*": ["src/presentations/components/*"],
+      "@assets/*": ["src/core/assets/*"],
+      "@routers/*": ["src/core/routers/*"],
+      "@networks/*": ["src/core/networks/*"],
+      "@hooks/*": ["src/core/hooks/*"],
+      "@styles/*": ["src/core/styles/*"],
+      "@entities/*": ["src/domain/entities/*"],
+      "@repositories/*": ["src/domain/repositories/*"],
+      "@usecases/*": ["src/domain/usecases/*"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
