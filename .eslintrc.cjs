@@ -9,7 +9,7 @@ module.exports = {
       jsx: true
     }
   },
-  ignorePatterns: ['.eslintrc.js'],
+  ignorePatterns: ['.eslintrc.cjs', 'lint-staged.config.cjs'],
   env: {
     jest: true,
     browser: true,
@@ -39,14 +39,14 @@ module.exports = {
   ],
   rules: {
     'react/jsx-one-expression-per-line': 'off',
-    'react/function-component-definition': [2, { namedComponents: 'arrow-function' }], //new rules
-    'react/require-default-props': 'off', //new rules
-    'react/jsx-no-useless-fragment': 'off', //new rules
-    'react/no-unused-prop-types': 'off', //new rules
-    'react/no-unstable-nested-comp': 'off', //new rules
-    'react/no-unstable-nested-components': 'off', //new rules
-    'no-restricted-exports': 'off', //new rules
-    'no-promise-executor-return': 'off', //new rules
+    'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
+    'react/require-default-props': 'off',
+    'react/jsx-no-useless-fragment': 'off',
+    'react/no-unused-prop-types': 'off',
+    'react/no-unstable-nested-comp': 'off',
+    'react/no-unstable-nested-components': 'off',
+    'no-restricted-exports': 'off',
+    'no-promise-executor-return': 'off',
     'no-plusplus': 'off',
     'arrow-parens': 'off',
     'no-redeclare': 'off',
